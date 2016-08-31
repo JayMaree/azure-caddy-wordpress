@@ -1,0 +1,7 @@
+{
+  "itemDisplayName": "Deploy a Linux VM which will run Caddy in West EU. The configuration allows you to run Wordpress in combination with Caddy.",
+  "description": "This template allows you to deploy a Linux VM, running Caddy. This will deploy in West EU on a D1 VM Size.",
+  "summary": "This template takes a minimum amount of parameters and deploys a Linux VM running Caddy, using the latest patched version.",
+  "githubUsername": "jaymaree",
+  "dateUpdated": "2016-08-31"
+}
