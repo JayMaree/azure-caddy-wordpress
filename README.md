@@ -1,6 +1,6 @@
 # Very simple deployment of an Caddy VM which is able to host Wordpress
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https://github.com/JayMaree/azure-caddy-wordpress/azuredeploy.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/JayMaree/azure-caddy-wordpress/master/azuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 <a href="http://armviz.io/#/?load=https://github.com/JayMaree/azure-caddy-wordpress/azuredeploy.json" target="_blank">
