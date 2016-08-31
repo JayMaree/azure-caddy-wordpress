@@ -1,7 +1,10 @@
+#!/bin/bash
 # Caddy-wordpress - jaymaree
 # The following could be used to create a caddy service - https://denbeke.be/blog/servers/running-caddy-server-as-a-service/
 # 30-08-2016 11:22
-
+set -e
+date
+ps axjf
 # add the php repository
 sudo add-apt-repository ppa:ondrej/php
 
@@ -73,6 +76,8 @@ sudo ./caddy -agree -conf="/home/jay/caddyfile"
 
 # let's install proftp which is useful while installing plugins e.g.
 sudo apt-get -y install proftpd
+echo "Caddy has been installed and configured..."
+exit 0
 
 # create a user which could be used with proftpd
 sudo useradd ftpwordpress -d /var/www/html -s /bin/bash -p changePassw0rd
