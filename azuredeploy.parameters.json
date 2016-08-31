@@ -2,14 +2,14 @@
   "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
+    "dnsLabelPrefix": {
+      "value": "GEN-UNIQUE-11"
+    },
     "adminUsername": {
-      "value": "azureUser"
+      "value": "azureuser"
     },
     "adminPassword": {
       "value": "GEN-PASSWORD"
-    },
-    "dnsLabelPrefix": {
-      "value": "GEN-UNIQUE"
     },
     "ubuntuOSVersion": {
       "value": "16.04.0-LTS"
