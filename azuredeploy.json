@@ -39,7 +39,7 @@
       },
       "defaultValue": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/azure-caddy-wordpress/"
 	}
-    }
+   }
 },
   "variables": {
     "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'salinuxvm')]",
@@ -87,30 +87,6 @@
         }
       }
     },
-	  {
-          "name": "caddyScript",
-          "type": "extensions",
-          "location": "[resourceGroup().location]",
-          "apiVersion": "2015-06-15",
-          "dependsOn": [
-            "[concat('Microsoft.Compute/virtualMachines/', variables('vmName'))]"
-          ],
-          "tags": {
-            "displayName": "caddyScripts"
-          },
-          "properties": {
-            "publisher": "Microsoft.OSTCExtensions",
-            "type": "CustomScriptForLinux",
-            "typeHandlerVersion": "1.5",
-            "autoUpgradeMinorVersion": true,
-            "settings": {
-              "fileUris": [
-                "[concat(parameters('_artifactsLocation'), '/', variables('ScriptFolder'), '/', variables('ScriptFileName'), parameters('_artifactsLocationSasToken'))]"
-              ],
-              "commandToExecute": "[concat('sh build_vm.sh ', parameters('installMethod'))]"
-            }
-		}
-	},
     {
       "apiVersion": "[variables('apiVersion')]",
       "type": "Microsoft.Network/virtualNetworks",
